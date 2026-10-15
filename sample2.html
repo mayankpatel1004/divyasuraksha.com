@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Suraksha Healthcare | CLARIDOME™ Non-Touch Wound Protection Cap</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#00529B',
+                            darkblue: '#0b2545',
+                            lightblue: '#0078d4',
+                            sky: '#e6f2ff',
+                            green: '#28a745',
+                            emerald: '#20c997',
+                            lightgreen: '#e8f7ec'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0b2545 0%, #00529B 60%, #0078d4 100%);
+        }
+
+        .green-gradient-btn {
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+        }
+        .green-gradient-btn:hover {
+            background: linear-gradient(135deg, #218838 0%, #165b24 100%);
+        }
+
+        .blue-gradient-btn {
+            background: linear-gradient(135deg, #00529B 0%, #0b2545 100%);
+        }
+        .blue-gradient-btn:hover {
+            background: linear-gradient(135deg, #003d74 0%, #06172d 100%);
+        }
+
+        .custom-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 82, 155, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Smooth page section transitions */
+        .page-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .page-section.active {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Custom scrollbars */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- TOP ANNOUNCEMENT BAR & QUICK CONTACT -->
+    <div class="bg-brand-darkblue text-white text-xs py-2 px-4 sm:px-8 border-b border-blue-900/50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <a href="tel:+918005896807" class="flex items-center gap-1.5 hover:text-brand-green transition"><i class="fa-solid fa-phone text-brand-green"></i> +91 8005896807</a>
+                <a href="mailto:amit@divyasuraksha.com" class="hidden md:inline-flex items-center gap-1.5 hover:text-brand-green transition"><i class="fa-solid fa-envelope text-brand-green"></i> amit@divyasuraksha.com</a>
+                <span class="hidden lg:inline-flex items-center gap-1.5"><i class="fa-solid fa-globe text-brand-green"></i> Global Healthcare Solutions</span>
+            </div>
+            <!-- Top Announcement Bar Slogan Tag -->
+            <div class="flex items-center space-x-2 text-[11px] font-medium tracking-wide">
+                <span class="bg-brand-green/20 text-emerald-300 px-2.5 py-0.5 rounded-full border border-brand-green/30 font-semibold">
+                    Care with Confidence.
+                </span>
+                <span class="hidden sm:inline text-slate-300">Pioneering Non-Touch Wound Care</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER & NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <!-- BRAND LOGO (LEFT) -->
+                <a href="#home" onclick="navigateTo('home')" class="flex items-center space-x-3 group shrink-0">
+                    <div class="relative w-12 h-12 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-brand-blue" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 C25 5 5 25 5 50 C5 75 25 95 50 95 C68 95 83 84 90 68 C92 63 86 60 83 64 C76 76 64 84 50 84 C31 84 16 69 16 50 C16 31 31 16 50 16 C67 16 81 28 85 44 C86 48 92 48 93 43 C89 22 71 5 50 5 Z" fill="#00529B"/>
+                            <path d="M50 20 L75 32 V52 C75 68 64 80 50 86 C36 80 25 68 25 52 V32 L50 20 Z" fill="#28a745"/>
+                            <path d="M50 23 L71 34 V51 C71 65 61 76 50 82 V23 Z" fill="#20c997" opacity="0.4"/>
+                            <path d="M44 38 H56 V44 H62 V56 H56 V62 H44 V56 H38 V44 H44 V38 Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-brand-blue leading-none">
+                            DIVYA<span class="text-brand-green">SURAKSHA</span>
+                        </span>
+                        <span class="text-[10px] sm:text-xs font-bold tracking-widest text-slate-500 uppercase mt-0.5">HEALTHCARE</span>
+                        <span class="text-[10px] italic text-brand-blue font-semibold">Care with Confidence.</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAVIGATION (CENTER) -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <button onclick="navigateTo('home')" id="nav-home" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-bold transition text-brand-blue bg-blue-50">Home</button>
+                    <button onclick="navigateTo('about')" id="nav-about" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-bold transition text-slate-600 hover:text-brand-blue hover:bg-slate-100">About Us</button>
+                    <button onclick="navigateTo('services')" id="nav-services" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-bold transition text-slate-600 hover:text-brand-blue hover:bg-slate-100">Services</button>
+                    <button onclick="navigateTo('products')" id="nav-products" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-bold transition text-slate-600 hover:text-brand-blue hover:bg-slate-100">Products</button>
+                    <button onclick="navigateTo('contact')" id="nav-contact" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-bold transition text-slate-600 hover:text-brand-blue hover:bg-slate-100">Contact Us</button>
+                </nav>
+
+                <!-- TOP RIGHT EMPOWERING LOGO & SLOGAN BADGE -->
+                <div class="hidden sm:flex items-center space-x-3 bg-slate-50 p-2 pr-3 rounded-xl border border-slate-200">
+                    <!-- DICCAI Wheelchair Icon Logo -->
+                    <div class="w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center border border-emerald-100 shrink-0">
+                        <svg class="w-7 h-7 text-brand-blue" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Wheelchair Person Silhouette -->
+                            <circle cx="58" cy="22" r="10" fill="#00529B"/>
+                            <!-- Upper Body -->
+                            <path d="M48 36 L62 36 C66 36 68 39 66 43 L58 60 L70 60 C73 60 75 63 74 66 C73 69 70 71 67 71 L52 71 C48 71 45 68 45 64 L50 48 L40 48 L35 38 L45 38 Z" fill="#00529B"/>
+                            <!-- Wheel -->
+                            <circle cx="45" cy="70" r="18" stroke="#00529B" stroke-width="7" fill="none"/>
+                            <!-- Green Arc Base / Leaf element -->
+                            <path d="M15 82 C35 95 65 95 85 82 C70 88 30 88 15 82 Z" fill="#28a745"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <div class="flex items-center gap-1">
+                            <span class="text-xs font-extrabold text-brand-blue tracking-tight">DICCAI</span>
+                            <span class="text-[9px] font-bold uppercase bg-emerald-100 text-brand-green px-1.5 py-0.2 rounded">Associated</span>
+                        </div>
+                        <span class="text-[11px] font-bold text-emerald-600 leading-tight">Empowering Divyang</span>
+                        <span class="text-[9px] font-medium text-slate-500 italic">Care with Confidence.</span>
+                    </div>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-brand-blue p-2 focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <button onclick="navigateTo('home'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-lg font-bold text-slate-700 hover:bg-blue-50 hover:text-brand-blue">Home</button>
+            <button onclick="navigateTo('about'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-lg font-bold text-slate-700 hover:bg-blue-50 hover:text-brand-blue">About Us</button>
+            <button onclick="navigateTo('services'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-lg font-bold text-slate-700 hover:bg-blue-50 hover:text-brand-blue">Services</button>
+            <button onclick="navigateTo('products'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-lg font-bold text-slate-700 hover:bg-blue-50 hover:text-brand-blue">Products</button>
+            <button onclick="navigateTo('contact'); toggleMobileMenu();" class="block w-full text-left px-4 py-2.5 rounded-lg font-bold text-slate-700 hover:bg-blue-50 hover:text-brand-blue">Contact Us</button>
+            
+            <!-- Mobile Empowering Badge -->
+            <div class="pt-2 border-t border-slate-100">
+                <div class="flex items-center space-x-3 bg-emerald-50 p-3 rounded-xl border border-emerald-100">
+                    <div class="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-brand-blue font-bold shrink-0">
+                        <i class="fa-solid fa-wheelchair text-brand-blue"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900">Empowering Divyang — DICCAI</p>
+                        <p class="text-[10px] text-brand-blue font-medium">Divya Suraksha Healthcare - Care with Confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT MAIN CONTAINER -->
+    <main class="flex-grow">
+
+        <!-- ================================================================= -->
+        <!-- 1) HOME PAGE SECTION -->
+        <!-- ================================================================= -->
+        <section id="page-home" class="page-section active">
+            
+            <!-- HERO BANNER -->
+            <div class="hero-gradient text-white py-16 lg:py-24 relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-white/5 pointer-events-none"></div>
+                <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 pointer-events-none"></div>
+                
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        
+                        <div class="lg:col-span-7 space-y-6">
+                            <!-- Hero Tag -->
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
+                                <i class="fa-solid fa-shield-heart text-emerald-400"></i>
+                                <span>Advanced Non-Touch Wound Care Innovation</span>
+                            </div>
+
+                            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                                CLARIDOME<span class="text-emerald-400">™</span>
+                            </h1>
+                            <p class="text-xl sm:text-2xl font-bold text-blue-100">
+                                Non-Touch Wound Protection Cap
+                            </p>
+                            <p class="text-base sm:text-lg text-slate-200 max-w-2xl font-normal leading-relaxed">
+                                Specially engineered with a raised dome frame creating a protective void over suture sites, preventing bandage friction, accidental bumps, and painful contact during healing.
+                            </p>
+
+                            <!-- Key Feature Pills Grid -->
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                                <div class="flex items-center space-x-2 bg-white/10 backdrop-blur px-3 py-2.5 rounded-xl border border-white/10">
+                                    <i class="fa-solid fa-hand-holding-medical text-emerald-400 text-lg"></i>
+                                    <span class="text-xs font-semibold">Non-Touch Vault</span>
+                                </div>
+                                <div class="flex items-center space-x-2 bg-white/10 backdrop-blur px-3 py-2.5 rounded-xl border border-white/10">
+                                    <i class="fa-solid fa-eye text-emerald-400 text-lg"></i>
+                                    <span class="text-xs font-semibold">Clear Inspection</span>
+                                </div>
+                                <div class="flex items-center space-x-2 bg-white/10 backdrop-blur px-3 py-2.5 rounded-xl border border-white/10">
+                                    <i class="fa-solid fa-shield-halved text-emerald-400 text-lg"></i>
+                                    <span class="text-xs font-semibold">5mm Raised Shield</span>
+                                </div>
+                                <div class="flex items-center space-x-2 bg-white/10 backdrop-blur px-3 py-2.5 rounded-xl border border-white/10">
+                                    <i class="fa-solid fa-droplet-slash text-emerald-400 text-lg"></i>
+                                    <span class="text-xs font-semibold">Waterproof Film</span>
+                                </div>
+                                <div class="flex items-center space-x-2 bg-white/10 backdrop-blur px-3 py-2.5 rounded-xl border border-white/10">
+                                    <i class="fa-solid fa-wind text-emerald-400 text-lg"></i>
+                                    <span class="text-xs font-semibold">Breathable Airflow</span>
+                                </div>
+                                <div class="flex items-center space-x-2 bg-white/10 backdrop-blur px-3 py-2.5 rounded-xl border border-white/10">
+                                    <i class="fa-solid fa-cubes-stacked text-emerald-400 text-lg"></i>
+                                    <span class="text-xs font-semibold">Shockproof Frame</span>
+                                </div>
+                            </div>
+
+                            <!-- CTAs -->
+                            <div class="flex flex-wrap gap-4 pt-4">
+                                <button onclick="navigateTo('products')" class="green-gradient-btn px-6 py-3.5 rounded-xl text-white font-bold text-sm shadow-lg hover:shadow-xl transition flex items-center gap-2">
+                                    <span>Explore Products & Sizes</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <button onclick="navigateTo('contact')" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-3.5 rounded-xl font-bold text-sm transition flex items-center gap-2">
+                                    <span>Request Samples</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- DYNAMIC PRODUCT PREVIEW CARD -->
+                        <div class="lg:col-span-5">
+                            <div class="bg-white rounded-2xl p-6 shadow-2xl text-slate-800 border border-slate-100 relative">
+                                <div class="absolute top-4 right-4 bg-emerald-100 text-brand-green text-xs font-bold px-3 py-1 rounded-full border border-emerald-200">
+                                    Patent Design
+                                </div>
+                                
+                                <span class="text-xs uppercase tracking-wider font-extrabold text-brand-blue">Clinical Product Diagram</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-1 mb-4">CLARIDOME™ Non-Touch Cap</h3>
+                                
+                                <div class="bg-slate-50 border-2 border-dashed border-slate-200 rounded-xl p-4 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                                    <svg class="w-full h-52 my-2" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="10" y="10" width="280" height="160" rx="12" fill="#fde047" opacity="0.15"/>
+                                        <rect x="10" y="10" width="280" height="160" rx="12" stroke="#f59e0b" stroke-dasharray="4 4" stroke-opacity="0.4"/>
+                                        <text x="25" y="30" fill="#b45309" font-size="10" font-weight="bold">Skin Surface</text>
+
+                                        <rect x="40" y="35" width="220" height="110" rx="16" fill="#00529B" fill-opacity="0.08" stroke="#00529B" stroke-width="2"/>
+                                        <text x="50" y="52" fill="#00529B" font-size="9" font-weight="bold">Hypoallergenic Adhesive Margin</text>
+
+                                        <rect x="70" y="55" width="160" height="70" rx="10" fill="#28a745" fill-opacity="0.2" stroke="#28a745" stroke-width="3"/>
+                                        
+                                        <rect x="90" y="70" width="120" height="40" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="2"/>
+                                        
+                                        <line x1="110" y1="90" x2="190" y2="90" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="125" y1="84" x2="125" y2="96" stroke="#dc2626" stroke-width="1.5"/>
+                                        <line x1="145" y1="84" x2="145" y2="96" stroke="#dc2626" stroke-width="1.5"/>
+                                        <line x1="165" y1="84" x2="165" y2="96" stroke="#dc2626" stroke-width="1.5"/>
+                                        <line x1="175" y1="84" x2="175" y2="96" stroke="#dc2626" stroke-width="1.5"/>
+
+                                        <path d="M 70 135 L 230 135" stroke="#475569" stroke-width="1"/>
+                                        <text x="105" y="148" fill="#334155" font-size="9" font-weight="bold">5mm Protective Non-Contact Dome Space</text>
+                                    </svg>
+                                    <p class="text-xs text-slate-500 mt-1">Safeguards incisions, stitches, and delicate grafts with zero direct contact.</p>
+                                </div>
+
+                                <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-3 h-3 rounded-full bg-brand-green animate-ping"></div>
+                                        <span class="text-xs font-semibold text-slate-600">Standard & Large Sizes Available</span>
+                                    </div>
+                                    <button onclick="navigateTo('products')" class="text-xs font-bold text-brand-blue hover:underline">View Specs &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURE HIGHLIGHTS GRID -->
+            <div class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-green bg-emerald-50 px-3.5 py-1 rounded-full border border-emerald-100">Engineering & Clinical Care</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">Why Choose CLARIDOME™ Protection Cap?</h2>
+                        <p class="text-slate-600 mt-3 text-base">Key features designed to accelerate recovery, improve patient comfort, and simplify wound monitoring.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-blue/40 transition hover:shadow-lg">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl font-bold mb-4">
+                                <i class="fa-solid fa-hand-holding-medical"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Zero Friction & Touch Protection</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Raised dome structural vault creates physical space, guaranteeing clothes, bedding, or bandages do not rub against sensitive wound sites.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-green/40 transition hover:shadow-lg">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-green flex items-center justify-center text-xl font-bold mb-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Clear Inspection Window</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">High-clarity central viewport allows doctors, nurses, and patients to easily inspect wound healing without removing or disturbing dressing.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-blue/40 transition hover:shadow-lg">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl font-bold mb-4">
+                                <i class="fa-solid fa-shield-virus"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Contaminant & Shock Barrier</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Forms a robust protective shield guarding against external dust, water splashes, micro-contaminants, and inadvertent accidental contact.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-green/40 transition hover:shadow-lg">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-green flex items-center justify-center text-xl font-bold mb-4">
+                                <i class="fa-solid fa-wind"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Breathable & Hypoallergenic</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Made with medical-grade skin-friendly adhesive that stays firmly secure while facilitating proper skin transpiration.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-blue/40 transition hover:shadow-lg">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl font-bold mb-4">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Waterproof Film Shield</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Compatible with DIY waterproof film sheets for daily hygiene routines like showering, keeping wound dressings completely dry.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-green/40 transition hover:shadow-lg">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-green flex items-center justify-center text-xl font-bold mb-4">
+                                <i class="fa-solid fa-ruler-combined"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Multiple Ergonomic Sizes</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Available in Standard (19x72mm) for minor incisions/sutures and Large (50x80mm) for surgical procedures and wider wounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DICCAI BANNER ON HOME PAGE -->
+            <div class="bg-gradient-to-r from-slate-900 via-brand-darkblue to-slate-900 text-white py-12 px-4 sm:px-8">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="flex items-center space-x-6">
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center border border-white/20 shrink-0">
+                            <i class="fa-solid fa-wheelchair text-3xl text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs uppercase font-extrabold text-emerald-400 tracking-wider">Inclusion & Social Empowerment</span>
+                            <h3 class="text-xl sm:text-2xl font-bold mt-1">Empowering Divyang — Associated with DICCAI</h3>
+                            <p class="text-sm text-slate-300 mt-1 max-w-2xl">
+                                Divya Suraksha Healthcare actively collaborates with the Disabled Chamber of Commerce and Industry (DICCAI) to create vocational opportunities and economic independence for specially-abled individuals.
+                            </p>
+                        </div>
+                    </div>
+                    <button onclick="navigateTo('about')" class="green-gradient-btn px-6 py-3 rounded-xl text-xs font-bold tracking-wide uppercase shrink-0 transition shadow-lg">
+                        Learn Our Mission
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 2) ABOUT US PAGE SECTION -->
+        <!-- ================================================================= -->
+        <section id="page-about" class="page-section">
+            <div class="bg-slate-100 py-12 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs uppercase font-extrabold text-brand-green tracking-widest bg-emerald-100 px-3 py-1 rounded-full">Who We Are</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-3">About Divya Suraksha Healthcare</h1>
+                    <p class="text-slate-600 max-w-2xl mx-auto mt-3 text-base">Pioneering compassionate medical innovations and ergonomic non-touch wound care solutions globally.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+                
+                <!-- MISSION & VISION -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Dedicated To Safety, Quality & Patient Comfort</h2>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            At <strong>Divya Suraksha Healthcare Care LLP</strong>, our primary endeavor is to revolutionize post-surgical and trauma wound care. Through meticulous engineering, bio-compatible materials, and patent design, we tackle painful wound friction and contamination risks head-on.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Our flagship product series, <strong>CLARIDOME™</strong>, reflects our guiding ethos: <em class="text-brand-blue font-bold">"Care with Confidence."</em> We empower patients and clinicians with peace of mind during critical recovery phases.
+                        </p>
+                        <div class="pt-2 space-y-2">
+                            <div class="flex items-center space-x-3 text-sm font-semibold text-slate-800">
+                                <i class="fa-solid fa-circle-check text-brand-green"></i>
+                                <span>ISO-Compliant Manufacturing Standards</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm font-semibold text-slate-800">
+                                <i class="fa-solid fa-circle-check text-brand-green"></i>
+                                <span>Global Distribution Network: India, Australia & USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Empowerment Highlight Box -->
+                    <div class="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl p-8 border border-blue-100 custom-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-green text-white flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">Empowering Divyang</h3>
+                                <p class="text-xs text-brand-blue font-semibold">Associated with DICCAI</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Divya Suraksha Healthcare is proudly associated with the <strong>Disabled Chamber of Commerce and Industry (DICCAI)</strong>. We believe true healthcare innovation encompasses social empowerment, fostering inclusive workplaces, and providing career opportunities to differently-abled individuals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LEADERSHIP SECTION -->
+                <div>
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Leadership & Visionaries</h2>
+                        <p class="text-slate-600 text-sm mt-2">Guided by experienced directors committed to healthcare excellence and social empowerment.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        
+                        <!-- Raghunath Yemul -->
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200 custom-shadow flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                            <div class="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center text-brand-blue text-3xl font-extrabold shrink-0 border-2 border-brand-blue">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="space-y-2 text-center sm:text-left">
+                                <span class="text-xs uppercase tracking-wider font-extrabold text-brand-green">Founder & Chairman</span>
+                                <h3 class="text-xl font-bold text-slate-900">RAGHUNATH YEMUL (GURUJI)</h3>
+                                <p class="text-xs text-slate-500">Strategic Chairman guiding corporate vision, international partnerships, and social inclusion initiatives.</p>
+                                <div class="pt-2 text-xs space-y-1 text-slate-600">
+                                    <p class="flex items-center justify-center sm:justify-start gap-2"><i class="fa-solid fa-phone text-brand-blue"></i> +91 9370383218</p>
+                                    <p class="flex items-center justify-center sm:justify-start gap-2"><i class="fa-solid fa-envelope text-brand-blue"></i> gurug@divyasuraksha.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Amit Agarwal -->
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200 custom-shadow flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                            <div class="w-24 h-24 rounded-full bg-emerald-100 flex items-center justify-center text-brand-green text-3xl font-extrabold shrink-0 border-2 border-brand-green">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div class="space-y-2 text-center sm:text-left">
+                                <span class="text-xs uppercase tracking-wider font-extrabold text-brand-blue">Director</span>
+                                <h3 class="text-xl font-bold text-slate-900">AMIT AGARWAL</h3>
+                                <p class="text-xs text-slate-500">Director overseeing operations, global distribution logistics, and clinical product integration.</p>
+                                <div class="pt-2 text-xs space-y-1 text-slate-600">
+                                    <p class="flex items-center justify-center sm:justify-start gap-2"><i class="fa-solid fa-phone text-brand-green"></i> +91 8005896807</p>
+                                    <p class="flex items-center justify-center sm:justify-start gap-2"><i class="fa-solid fa-envelope text-brand-green"></i> amit@divyasuraksha.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 3) SERVICES PAGE SECTION -->
+        <!-- ================================================================= -->
+        <section id="page-services" class="page-section">
+            <div class="bg-slate-100 py-12 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs uppercase font-extrabold text-brand-blue tracking-widest bg-blue-100 px-3 py-1 rounded-full">Our Healthcare Capabilities</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-3">Clinical & Distribution Services</h1>
+                    <p class="text-slate-600 max-w-2xl mx-auto mt-3 text-base">Innovative wound protection systems, bulk clinical supply, and technical training.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 custom-shadow space-y-4 hover:border-brand-blue transition">
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-bandage"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Non-Touch Step-Up Bandage Supply</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Supply of specialized non-touch protective caps designed for post-operative incisions, sutured wounds, and delicate skin graft recovery.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 custom-shadow space-y-4 hover:border-brand-green transition">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Hospital & Clinical Wholesale Supply</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            We partner directly with surgical centers, hospitals, and medical distributors offering bulk volume packages and custom size requirements.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 custom-shadow space-y-4 hover:border-brand-blue transition">
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-shower"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">DIY Waterproof Shield Kits</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Providing easy-to-use 10-sheet DIY waterproof protection films for home recovery, allowing patients to maintain hygiene safely.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-12 bg-blue-50 border border-blue-200 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-1 text-center md:text-left">
+                        <h4 class="text-lg font-bold text-brand-darkblue">Need Hospital Wholesale Quotes or Clinical Samples?</h4>
+                        <p class="text-sm text-slate-600">Get in touch with our India or International distribution team.</p>
+                    </div>
+                    <button onclick="navigateTo('contact')" class="blue-gradient-btn px-6 py-3 rounded-xl text-white text-xs font-bold uppercase tracking-wider shrink-0 shadow">
+                        Contact Sales Team
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 4) PRODUCTS PAGE SECTION -->
+        <!-- ================================================================= -->
+        <section id="page-products" class="page-section">
+            <div class="bg-slate-100 py-12 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs uppercase font-extrabold text-brand-green tracking-widest bg-emerald-100 px-3 py-1 rounded-full">Product Showcase</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-3">CLARIDOME™ Protection Cap Range</h1>
+                    <p class="text-slate-600 max-w-2xl mx-auto mt-3 text-base">Specifications, application guidelines, and product sizing details.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+                
+                <!-- PRODUCT SPECIFICATIONS GRID -->
+                <div>
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Available Sizes & Technical Specs</h2>
+                        <p class="text-slate-600 text-sm mt-1">Select the appropriate size based on wound surface area and healthcare guidance.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <!-- Standard Size -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 custom-shadow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="bg-blue-100 text-brand-blue text-xs font-bold px-3 py-1 rounded-full uppercase">Standard Size</span>
+                                    <span class="text-xs text-slate-400 font-semibold">Ref: CLAR-STD</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">CLARIDOME™ Step-Up Bandage</h3>
+                                <p class="text-xs text-slate-500 mb-6">Designed for smaller surgical incisions, minor post-op stitches, and localized trauma.</p>
+                                
+                                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100 text-sm mb-6">
+                                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                                        <span class="text-slate-500 font-medium">Outer Size:</span>
+                                        <span class="font-bold text-slate-800">19 × 72 mm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                                        <span class="text-slate-500 font-medium">Inner Viewing Window:</span>
+                                        <span class="font-bold text-brand-blue">10 × 25 mm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-slate-500 font-medium">Protective Frame Thickness:</span>
+                                        <span class="font-bold text-brand-green">5 mm</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button onclick="navigateTo('contact')" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3 rounded-xl text-xs transition">
+                                Request Quote / Sample
+                            </button>
+                        </div>
+
+                        <!-- Large Size -->
+                        <div class="bg-white rounded-2xl border-2 border-brand-green p-6 custom-shadow flex flex-col justify-between relative">
+                            <div class="absolute -top-3 right-6 bg-brand-green text-white text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full">
+                                Recommended Surgical Size
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="bg-emerald-100 text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase">Large Size</span>
+                                    <span class="text-xs text-slate-400 font-semibold">Ref: CLAR-LRG</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">CLARIDOME™ Wound Protection Cap</h3>
+                                <p class="text-xs text-slate-500 mb-6">Engineered for wider surgical incisions, abdominal procedures, and larger wound areas.</p>
+                                
+                                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100 text-sm mb-6">
+                                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                                        <span class="text-slate-500 font-medium">Outer Size:</span>
+                                        <span class="font-bold text-slate-800">50 × 80 mm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                                        <span class="text-slate-500 font-medium">Inner Viewing Window:</span>
+                                        <span class="font-bold text-brand-blue">30 × 45 mm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-slate-500 font-medium">Protective Frame Thickness:</span>
+                                        <span class="font-bold text-brand-green">5 mm</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button onclick="navigateTo('contact')" class="w-full green-gradient-btn text-white font-bold py-3 rounded-xl text-xs transition shadow">
+                                Request Quote / Sample
+                            </button>
+                        </div>
+
+                        <!-- DIY Film Sheet Kit -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 custom-shadow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="bg-sky-100 text-brand-blue text-xs font-bold px-3 py-1 rounded-full uppercase">Hygiene Accessory</span>
+                                    <span class="text-xs text-slate-400 font-semibold">Ref: CLAR-FLM</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">DIY Waterproof Film Pack</h3>
+                                <p class="text-xs text-slate-500 mb-6">Thin transparent adhesive barrier films for shower protection over dressings.</p>
+                                
+                                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100 text-sm mb-6">
+                                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                                        <span class="text-slate-500 font-medium">Quantity per Box:</span>
+                                        <span class="font-bold text-slate-800">10 Sheets</span>
+                                    </div>
+                                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                                        <span class="text-slate-500 font-medium">Water Resistance:</span>
+                                        <span class="font-bold text-brand-blue">100% Waterproof</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-slate-500 font-medium">Skin Compatibility:</span>
+                                        <span class="font-bold text-brand-green">Hypoallergenic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button onclick="navigateTo('contact')" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3 rounded-xl text-xs transition">
+                                Request Quote / Sample
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 5-STEP APPLICATION GUIDE -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 custom-shadow">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs uppercase font-extrabold text-brand-blue tracking-wider bg-blue-50 px-3 py-1 rounded-full">Clinical Guidance</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">5-Step Application Guide</h2>
+                        <p class="text-slate-600 text-sm mt-1">Simple instructions for applying CLARIDOME™ protection caps effectively.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center space-y-2">
+                            <div class="w-10 h-10 rounded-full bg-brand-blue text-white font-extrabold flex items-center justify-center mx-auto text-sm">1</div>
+                            <h4 class="font-bold text-sm text-slate-900">Prepare Site</h4>
+                            <p class="text-xs text-slate-500">Clean and disinfect wound according to healthcare professional advice.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center space-y-2">
+                            <div class="w-10 h-10 rounded-full bg-brand-blue text-white font-extrabold flex items-center justify-center mx-auto text-sm">2</div>
+                            <h4 class="font-bold text-sm text-slate-900">Dry Surrounding Skin</h4>
+                            <p class="text-xs text-slate-500">Ensure surrounding healthy skin is dry to facilitate optimal adhesion.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center space-y-2">
+                            <div class="w-10 h-10 rounded-full bg-brand-blue text-white font-extrabold flex items-center justify-center mx-auto text-sm">3</div>
+                            <h4 class="font-bold text-sm text-slate-900">Center Dome Opening</h4>
+                            <p class="text-xs text-slate-500">Position the raised dome window directly over the central wound area.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center space-y-2">
+                            <div class="w-10 h-10 rounded-full bg-brand-blue text-white font-extrabold flex items-center justify-center mx-auto text-sm">4</div>
+                            <h4 class="font-bold text-sm text-slate-900">Press Border Securely</h4>
+                            <p class="text-xs text-slate-500">Gently press down the adhesive border along all edges for a continuous seal.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center space-y-2">
+                            <div class="w-10 h-10 rounded-full bg-brand-green text-white font-extrabold flex items-center justify-center mx-auto text-sm">5</div>
+                            <h4 class="font-bold text-sm text-slate-900">Inspect & Monitor</h4>
+                            <p class="text-xs text-slate-500">Regularly inspect through the clear window; replace if seal is compromised.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 5) CONTACT US PAGE SECTION -->
+        <!-- ================================================================= -->
+        <section id="page-contact" class="page-section">
+            <div class="bg-slate-100 py-12 border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs uppercase font-extrabold text-brand-blue tracking-widest bg-blue-100 px-3 py-1 rounded-full">Global Presence</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-3">Contact Us</h1>
+                    <p class="text-slate-600 max-w-2xl mx-auto mt-3 text-base">Get in touch with our offices across India, Australia, and the USA.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+                
+                <!-- THREE GLOBAL OFFICES -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- India Office Card -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 custom-shadow space-y-4">
+                        <div class="flex items-center space-x-3 text-brand-blue border-b border-slate-100 pb-3">
+                            <i class="fa-solid fa-location-dot text-2xl text-brand-blue"></i>
+                            <h3 class="font-extrabold text-lg text-slate-900">India Head Office</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+                            Shree Niketan, 10/48,<br>
+                            Vidhyadhar Nagar, Jaipur-302039,<br>
+                            Rajasthan, India
+                        </p>
+                        <div class="pt-2 text-xs space-y-2 text-slate-700">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-green"></i> <strong>Phone:</strong> +91 8005896807</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-green"></i> <strong>Chairman:</strong> +91 9370383218</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-green"></i> <strong>Email:</strong> amit@divyasuraksha.com</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-green"></i> <strong>Email:</strong> gurug@divyasuraksha.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Australia Office Card -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 custom-shadow space-y-4">
+                        <div class="flex items-center space-x-3 text-brand-blue border-b border-slate-100 pb-3">
+                            <i class="fa-solid fa-earth-oceania text-2xl text-brand-blue"></i>
+                            <h3 class="font-extrabold text-lg text-slate-900">Australia Office</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+                            Suite 5 m, 183 Lakemba Street,<br>
+                            Lakemba NSW 2195,<br>
+                            Australia
+                        </p>
+                        <div class="pt-2 text-xs space-y-2 text-slate-700">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-blue"></i> <strong>Phone:</strong> +61 425 209 204</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-globe text-brand-blue"></i> <strong>Web:</strong> www.divyasuraksha.com</p>
+                        </div>
+                    </div>
+
+                    <!-- USA Office Card -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 custom-shadow space-y-4">
+                        <div class="flex items-center space-x-3 text-brand-blue border-b border-slate-100 pb-3">
+                            <i class="fa-solid fa-building-flag text-2xl text-brand-blue"></i>
+                            <h3 class="font-extrabold text-lg text-slate-900">USA Office</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+                            1404 Tupelo Avenue,<br>
+                            Pasadena,<br>
+                            Texas 77506, USA
+                        </p>
+                        <div class="pt-2 text-xs space-y-2 text-slate-700">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-green"></i> <strong>Email:</strong> gurug@divyasuraksha.com</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-shield text-brand-green"></i> <strong>Global Inquiries:</strong> Claridome USA</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- DIRECT CONTACT FORM -->
+                <div class="bg-white rounded-2xl border border-slate-200 custom-shadow p-8 max-w-3xl mx-auto">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold text-slate-900">Send Us an Inquiry</h3>
+                        <p class="text-xs text-slate-500 mt-1">Contact our team for product samples, wholesale orders, or clinical inquiries.</p>
+                    </div>
+
+                    <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name *</label>
+                                <input type="text" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="e.g. Dr. Rajesh Sharma">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address *</label>
+                                <input type="email" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="name@hospital.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="+91 98765 43210">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Inquiry Purpose</label>
+                                <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <option>CLARIDOME™ Product Samples</option>
+                                    <option>Hospital Bulk Order</option>
+                                    <option>Distributorship Inquiry</option>
+                                    <option>DICCAI Social Empowerment Partnership</option>
+                                    <option>General Question</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message *</label>
+                            <textarea rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Please specify your request details..."></textarea>
+                        </div>
+
+                        <div id="formFeedback" class="hidden p-3 rounded-lg text-xs font-semibold"></div>
+
+                        <button type="submit" class="w-full green-gradient-btn text-white font-bold py-3.5 rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+                            <span>Submit Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- FOOTER SECTION WITH FOOTER-LEFT BRANDING & DICCAI LOGO BADGE -->
+    <!-- ================================================================= -->
+    <footer class="bg-brand-darkblue text-slate-300 pt-16 pb-8 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-white/10">
+                
+                <!-- FOOTER LEFT COLUMN: LOGO, BRAND NAME, SLOGAN & EMPOWERING DIVYANG LOGO -->
+                <div class="lg:col-span-5 space-y-5">
+                    
+                    <!-- Divya Suraksha Logo Header -->
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-10 h-10 text-white" viewBox="0 0 100 100" fill="none">
+                            <path d="M50 5 C25 5 5 25 5 50 C5 75 25 95 50 95 C68 95 83 84 90 68 C92 63 86 60 83 64 C76 76 64 84 50 84 C31 84 16 69 16 50 C16 31 31 16 50 16 C67 16 81 28 85 44 C86 48 92 48 93 43 C89 22 71 5 50 5 Z" fill="#0078d4"/>
+                            <path d="M50 20 L75 32 V52 C75 68 64 80 50 86 C36 80 25 68 25 52 V32 L50 20 Z" fill="#28a745"/>
+                            <path d="M44 38 H56 V44 H62 V56 H56 V62 H44 V56 H38 V44 H44 V38 Z" fill="white"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-extrabold text-white tracking-tight">DIVYA SURAKSHA</span>
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">HEALTHCARE CARE LLP</span>
+                            <span class="text-xs font-bold text-emerald-400 italic mt-0.5">Care with Confidence.</span>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-300 leading-relaxed max-w-md">
+                        Pioneering zero-touch wound protection with <strong>CLARIDOME™</strong> non-touch wound protection caps. Dedicated to improving recovery outcomes, comfort, and patient confidence.
+                    </p>
+
+                    <!-- FOOTER LEFT EMPOWERING DIVYANG DICCAI LOGO & SLOGAN BADGE -->
+                    <div class="bg-white/10 p-3.5 rounded-2xl border border-white/15 max-w-md flex items-center space-x-4">
+                        <!-- DICCAI Wheelchair Logo Icon -->
+                        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-1 shrink-0 border border-emerald-400/40 shadow-sm">
+                            <svg class="w-10 h-10 text-brand-blue" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="58" cy="22" r="10" fill="#00529B"/>
+                                <path d="M48 36 L62 36 C66 36 68 39 66 43 L58 60 L70 60 C73 60 75 63 74 66 C73 69 70 71 67 71 L52 71 C48 71 45 68 45 64 L50 48 L40 48 L35 38 L45 38 Z" fill="#00529B"/>
+                                <circle cx="45" cy="70" r="18" stroke="#00529B" stroke-width="7" fill="none"/>
+                                <path d="M15 82 C35 95 65 95 85 82 C70 88 30 88 15 82 Z" fill="#28a745"/>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="text-xs font-extrabold text-white">DICCAI</span>
+                                <span class="text-[9px] font-bold text-emerald-300 uppercase bg-emerald-500/20 px-1.5 py-0.2 rounded border border-emerald-500/30">Associated</span>
+                            </div>
+                            <span class="text-xs font-bold text-emerald-400">Empowering Divyang</span>
+                            <span class="text-[10px] text-slate-300">Associated with DICCAI — Divya Suraksha Healthcare Care With Confidence.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FOOTER MIDDLE COLUMN: QUICK LINKS -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-xs font-extrabold text-white uppercase tracking-widest border-b border-white/10 pb-2">Navigation Links</h4>
+                    <ul class="space-y-2 text-xs font-medium">
+                        <li><a href="#home" onclick="navigateTo('home')" class="hover:text-emerald-400 transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400 text-[10px]"></i> Home Page</a></li>
+                        <li><a href="#about" onclick="navigateTo('about')" class="hover:text-emerald-400 transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400 text-[10px]"></i> About Us</a></li>
+                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-emerald-400 transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400 text-[10px]"></i> Healthcare Services</a></li>
+                        <li><a href="#products" onclick="navigateTo('products')" class="hover:text-emerald-400 transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400 text-[10px]"></i> CLARIDOME™ Products</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-emerald-400 transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-emerald-400 text-[10px]"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- FOOTER RIGHT COLUMN: GLOBAL OFFICES CONTACT SUMMARY -->
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="text-xs font-extrabold text-white uppercase tracking-widest border-b border-white/10 pb-2">Global Headquarters & Offices</h4>
+                    <div class="text-xs space-y-3 text-slate-300">
+                        <div>
+                            <p class="font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-emerald-400"></i> India Head Office:</p>
+                            <p class="text-slate-400 text-[11px] pl-4">Shree Niketan, 10/48, Vidhyadhar Nagar, Jaipur-302039, Rajasthan</p>
+                            <p class="text-slate-300 text-[11px] pl-4"><i class="fa-solid fa-phone text-emerald-400"></i> +91 8005896807 | +91 9370383218</p>
+                            <p class="text-slate-300 text-[11px] pl-4"><i class="fa-solid fa-envelope text-emerald-400"></i> amit@divyasuraksha.com</p>
+                        </div>
+                        <div class="pt-1">
+                            <p class="font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-globe text-brand-blue"></i> Australia & USA Offices:</p>
+                            <p class="text-slate-400 text-[11px] pl-4">Australia: Suite 5 m, 183 Lakemba St, Lakemba NSW 2195 (+61 425 209 204)</p>
+                            <p class="text-slate-400 text-[11px] pl-4">USA: 1404 Tupelo Avenue, Pasadena, Texas 77506</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT & BOTTOM DISCLAIMER -->
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Divya Suraksha Healthcare Care LLP. All rights reserved.</p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-emerald-400 font-semibold">Care with Confidence.</span>
+                    <span>•</span>
+                    <span>Empowering Divyang — Associated with DICCAI</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR ROUTING & INTERACTION -->
+    <script>
+        // Page Navigation Controller
+        function navigateTo(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(p => p.classList.remove('active'));
+
+            // Show selected page
+            const targetPage = document.getElementById('page-' + pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+
+            // Update navigation button styles
+            const navBtns = document.querySelectorAll('.nav-btn');
+            navBtns.forEach(btn => {
+                btn.classList.remove('bg-blue-50', 'text-brand-blue');
+                btn.classList.add('text-slate-600');
+            });
+
+            const activeBtn = document.getElementById('nav-' + pageId);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-blue-50', 'text-brand-blue');
+                activeBtn.classList.remove('text-slate-600');
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        // Direct Inquiry Form Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const feedback = document.getElementById('formFeedback');
+            feedback.classList.remove('hidden', 'bg-red-100', 'text-red-800');
+            feedback.classList.add('bg-emerald-100', 'text-emerald-800', 'block');
+            feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your inquiry has been submitted. Our team will contact you shortly.';
+
+            document.getElementById('inquiryForm').reset();
+
+            setTimeout(() => {
+                feedback.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Initialize route from URL hash
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (['home', 'about', 'services', 'products', 'contact'].includes(hash)) {
+                navigateTo(hash);
+            } else {
+                navigateTo('home');
+            }
+        });
+    </script>
+</body>
+</html>
