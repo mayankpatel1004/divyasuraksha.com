@@ -12,7 +12,7 @@ git push origin main
 echo "Deploying to server..."
 
 ssh -p 65002 u797036281@82.112.239.225 << 'EOF'
-cd /home/u797036281/domains/divyasuraksha.com/public_html && git pull origin main || exit
+cd /home/u797036281/domains/divyasuraksha.in/public_html && git pull origin main || exit
 git pull origin main
 echo "Deployment completed."
 EOF
